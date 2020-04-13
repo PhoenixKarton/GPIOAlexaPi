@@ -1,0 +1,16 @@
+{
+    "FAUXMO": {
+        "ip_address": "auto"
+    },
+    "PLUGINS": {
+        "GpioPlugin": {
+	    "path": "./GpioPlugin.py",
+            "DEVICES": [
+                {
+		    "pin" : 7,
+                    "name": "lampe"
+                }
+            ]
+        }
+    }
+}

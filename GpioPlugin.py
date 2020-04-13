@@ -2,9 +2,9 @@ import RPi.GPIO as GPIO
 import fauxmo
 
 class GpioPlugin(fauxmo.plugins.FauxmoPlugin):
- def __init__(self, name, port):
+ def __init__(self, pin, name, port):
   super().__init__(name=name, port=port)
-  self.pin = 7
+  self.pin = pin
   self.state = 0
   GPIO.setmode(GPIO.BOARD)
   GPIO.setup(self.pin, GPIO.OUT)
